@@ -1,0 +1,122 @@
+body {
+    background-color: blueviolet;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 10vh;
+
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkmenu {
+    font-size: 2em;
+    text-decoration: none;
+    color: aliceblue;
+}
+header .hamb{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    header .menu{
+        display: none;
+    }
+    header .hamb{
+        display: inline;
+    }
+    
+}
+
+.carousel-image {
+    height: 500px;
+    /* Ajuste da altura */
+    object-fit: cover;
+    /* Para ajustar a imagem dentro do espaço definido */
+}
+
+.card {
+    width: 200px;
+    /* Tamanho dos cards */
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+.inscricao-container {
+    margin-top: 50px;
+  }
+
+  .inscricao-form {
+    max-width: 400px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .inscricao-form label {
+    font-weight: bold;
+  }
+  .inscricao-form h2 {
+    text-align: center;
+  }
+
+  .inscricao-form input[type="email"],
+  .inscricao-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .inscricao-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a924d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .inscricao-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .signup-link {
+    margin-top: 20px;
+  }
+
+.footer-separator {
+    /* Linha superior do Rodapé */
+    background-color: #333;
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer {
+    /* Rodapé */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+}
