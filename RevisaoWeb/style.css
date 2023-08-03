@@ -1,12 +1,12 @@
 body {
-    background-color: blueviolet;
+    background-color: black;
     margin: 0;
 }
 
 header {
     width: 100%;
     height: 10vh;
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -26,7 +26,7 @@ header img {
 .linkmenu {
     font-size: 2em;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
 }
 header .hamb{
     display: none;
@@ -41,9 +41,11 @@ header .hamb{
     }
     
 }
-
+.meuhb {
+  display: none;
+}
 .carousel-image {
-    height: 500px;
+    height: 600px;
     /* Ajuste da altura */
     object-fit: cover;
     /* Para ajustar a imagem dentro do espaço definido */
@@ -51,14 +53,15 @@ header .hamb{
 
 .card {
     width: 200px;
-    /* Tamanho dos cards */
-    height: 250px;
+    height: 300px;
     background-color: #f2f2f2;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
     display: inline-block;
 }
+
+
 .inscricao-container {
     margin-top: 50px;
   }
