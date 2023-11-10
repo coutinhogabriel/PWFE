@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Adicione seus estilos personalizados aqui */
+        .carousel-banner-item img {
+            width: 100%;
+            border-radius: 10px; /* Ajuste conforme necessário */
+        }
+
+        .carrossel-banners {
+            margin-top: 150px; /* Ajuste conforme necessário para posicionar o carrossel mais para baixo */
+        }
+
+        .slick-prev,
+        .slick-next {
+            display: none; /* Ocultar os botões Previous e Next */
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px auto; /* Margem para centralizar na página */
+        }
+
+        .card {
+            width: 150px; /* Largura do card */
+            text-align: center;
+            margin: 10px; /* Espaçamento entre os cards */
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px; /* Ajuste conforme necessário */
+        }
+    </style>
+    <title>WestFarm Pet Center</title>
+</head>
+
+<body>
+
+    <!-- Seção do Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">WestFarm Pet Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção do Carrossel -->
+    <div class="container-fluid top-banner">
+        <div class="row">
+            <div class="carrossel-banners main-banners slick-initialized slick-slider" aria-label="Novidades">
+                <div class="slick-list draggable">
+                    <div class="slick-track">
+                        <!-- Coloque seus slides aqui -->
+                        <div class="carousel-banner-item">
+                            <img title="1. Esquenta Petz Friday com até 50% OFF " alt="1. Esquenta Petz Friday com até 50% OFF " loading="lazy" class="" src="https://images.petz.com.br/fotos/Home_Desk_1900x390_BF_50off_v2.jpg">
+                        </div>
+                        <div class="carousel-banner-item">
+                            <!-- Adicione o conteúdo do próximo slide aqui -->
+                        </div>
+                        <div class="carousel-banner-item">
+                            <!-- Adicione o conteúdo do próximo slide aqui -->
+                        </div>
+                        <!-- Adicione mais slides conforme necessário -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seção dos Cards -->
+<div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-circle">
+            <img src="URL_DA_IMAGEM" alt="Descrição da Imagem">
+        </div>
+        <p>Descrição do Serviço 1</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-circle">
+            <img src="URL_DA_IMAGEM" alt="Descrição da Imagem">
+        </div>
+        <p>Descrição do Serviço 2</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-circle">
+            <img src="URL_DA_IMAGEM" alt="Descrição da Imagem">
+        </div>
+        <p>Descrição do Serviço 3</p>
+    </div>
+    <!-- Adicione mais cards conforme necessário -->
+</div>
+    <!-- Seções adicionais vão aqui -->
+
+    <!-- Seção do Rodapé -->
+    <footer class="mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 WestFarm Pet Center. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('.carrossel-banners').slick({
+                infinite: true,
+                slidesToShow: 3, /* Ajuste conforme necessário */
+                slidesToScroll: 1,
+                prevArrow: false,
+                nextArrow: false,
+                autoplay: true,
+                autoplaySpeed: 2000 // Velocidade em milissegundos
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
